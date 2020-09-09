@@ -1,0 +1,49 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1599436282000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson",
+        "title": "USGS All Earthquakes, Past Month",
+        "status": 200,
+        "api": "1.10.3",
+        "count": 13249
+    },
+    "features": [{
+                "type": "Feature",
+                "properties": {
+                    "mag": 0.58,
+                    "place": "8km NE of Aguanga, CA",
+                    "time": 1599435874410,
+                    "updated": 1599436100008,
+                    "tz": null,
+                    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci38679002",
+                    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci38679002.geojson",
+                    "felt": null,
+                    "cdi": null,
+                    "mmi": null,
+                    "alert": null,
+                    "status": "automatic",
+                    "tsunami": 0,
+                    "sig": 5,
+                    "net": "ci",
+                    "code": "38679002",
+                    "ids": ",ci38679002,",
+                    "sources": ",ci,",
+                    "types": ",nearby-cities,origin,phase-data,scitech-link,",
+                    "nst": 28,
+                    "dmin": 0.02842,
+                    "rms": 0.24,
+                    "gap": 48,
+                    "magType": "ml",
+                    "type": "earthquake",
+                    "title": "M 0.6 - 8km NE of Aguanga, CA"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-116.7955,
+                        33.4841667,
+                        2.96
+                    ]
+                },
+                "id": "ci38679002"
+            },
