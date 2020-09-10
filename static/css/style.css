@@ -10,12 +10,7 @@ html {
 }
 
 .legend {
-    padding: 2px;
-    font-family: Sanchez, serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 20px;
+    padding: 10px;
     color: #555;
     background-color: white;
     /* border-radius: 3px; */
@@ -23,9 +18,14 @@ html {
     inset-inline-start: 1px;
 }
 
-ul {
-    padding: 1px;
-    border: 12px;
-    color: white;
-    line-height: 18px;
+li {
+    padding: 3px;
+    border: 5px;
+    color: black;
+    line-height: 10px;
+    font-family: Sanchez, serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    /* line-height: 20px; */
 }
