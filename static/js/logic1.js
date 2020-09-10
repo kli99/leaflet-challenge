@@ -65,85 +65,12 @@ function createFeatures(earthquakeData) {
         onEachFeature: onEachFeature
     });
 
-    // function createLine(feature, latlng) {
-    //     return L.polyline(latlng);
-    // }
-
-
-
-
-    // function createNew(feature) {
-    //     var stylesInfo = {
-    //         stroke: true,
-    //         color: "tomato",
-    //         weight: 1
-    //     }
-    //     return stylesInfo;
-    // }
-    // var faultlines = L.geoJSON(earthquakeData, {
-    //     pointToLayer: createLine,
-    //     style: createNew,
-    //     onEachFeature: onEachFeature
-    // });
 
 
     // Sending our earthquakes layer to the createMap function
     createMap(earthquakes);
 
 };
-
-// create a red polyline from an arrays of LatLng points
-var polyline = L.polyline(latlng, { color: 'red' }).addTo(map);
-
-// zoom the map to the polyline
-map.fitBounds(polyline.getBounds());
-
-// // create markers features for the map
-// function createFeatures(earthquakeData) {
-
-//     // Define a function we want to run once for each feature in the features array
-//     // Give each feature a popup describing the place and time of the earthquake
-
-
-//     function onEachFeature(feature, layer) {
-//         layer.bindPopup("<h3>" + feature.properties.place +
-//             "</h3><hr><p>" + new Date(feature.properties.time) + "</p>");
-//     };
-
-//     // Create a GeoJSON layer containing the features array on the earthquakeData object
-//     // Run the onEachFeature function once for each piece of data in the array
-//     function createMarker(feature, latlng) {
-//         return L.circleMarker(latlng);
-//     };
-
-//     // style function with calling straight from API
-//     function createStyle(feature) {
-//         var styleInfo = {
-//             fillColor: createColor(feature.properties.mag),
-//             fillopacity: 1,
-//             stroke: true,
-//             color: "black",
-//             weight: 1,
-//             radius: feature.properties.mag * 8
-//         }
-
-//         return styleInfo;
-//     };
-
-//     // geojson the functions into one
-//     var earthquakes = L.geoJSON(earthquakeData, {
-//         pointToLayer: createMarker,
-//         style: createStyle,
-//         onEachFeature: onEachFeature
-//     });
-
-
-//     // Sending our earthquakes layer to the createMap function
-//     createMap(earthquakes);
-
-// };
-
-
 
 
 // var myMap = L.map("map").setView([37.09, -95.71], 5);
@@ -182,19 +109,9 @@ function createMap(earthquakes) {
         "Outdoors": outdoors
     };
 
-
-
-    // // create a red polyline from an arrays of LatLng points
-    // var polyline = L.polyline(latlng, { color: 'red' }).addTo(map);
-
-    // // zoom the map to the polyline
-    // map.fitBounds(polyline.getBounds());
-
-
     // Create overlay object to hold our overlay layer
     var overlayMaps = {
 
-        "Fault Lines": polyline,
         "Earthquakes": earthquakes
     };
 
